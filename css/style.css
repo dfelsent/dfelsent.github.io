@@ -1,0 +1,220 @@
+.all-content {
+  background-color: lightgrey;
+}
+
+#brand {
+  font-size: 1.4em;
+  position: relative;
+  top: 10px;
+}
+
+main {
+  text-align: center;
+  box-shadow: black 0px 0px 7px;
+}
+
+.intro {
+  padding: 120px 10px 45px 10px;
+  background-color: #eceeef;
+}
+.intro h1 {
+  width: 100%;
+}
+.intro > div {
+  margin: 15px;
+}
+
+.media-body {
+  font-size: 1.5em;
+  padding-top: 15px;
+}
+
+.intro div#pic-container {
+  max-width: 300px;
+  max-height: 300px;
+  min-height: 200px;
+  min-width: 200px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin: 0 auto;
+}
+
+.portfolio-box {
+  background-color: #ff8259;
+  padding: 40px 0px 40px 0px;
+  position: relative;
+  font-size: 1.4em;
+}
+.portfolio-box p {
+  padding: 10px 50px 0 50px;
+}
+
+.codepen-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.codepen-content-container > div.codepen-pen {
+  margin: 20px;
+  position: relative;
+}
+
+.contact-box {
+  background-color: #eceeef;
+  padding: 40px 0px 40px 0;
+}
+
+#githubProject {
+  background: radial-gradient(ellipse farthest-corner at center center, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.85) 100%) repeat scroll 0% 0%;
+  height: 263px;
+  width: 290px;
+  color: white;
+}
+#githubProject a {
+  color: white;
+}
+#githubProject #githubButton {
+  border: 3px solid white;
+  border-radius: 4px;
+  background: none;
+  padding: 7px 15px;
+  cursor: pointer;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  width: 160px;
+  margin-left: -80px;
+  bottom: 15%;
+}
+#githubProject #githubButton:hover {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+}
+
+#myChatIcon {
+  content: "\f086";
+  font-family: FontAwesome;
+  position: relative;
+  font-size: 290px;
+  color: darkgrey;
+  margin: 0 auto;
+  z-index: 1;
+  margin-top: -35px;
+}
+
+.btn-secondary {
+  box-shadow: black 0px 0px 1px;
+  margin: 5px;
+}
+.btn-secondary:hover {
+  background-color: #ff8259;
+  transition: 0.5s;
+}
+
+footer {
+  background-color: #3bedb4;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #3bedb4;
+  box-shadow: black 0px 0px 7px;
+}
+
+ul.nav.navbar-nav {
+  display: block;
+}
+ul.nav.navbar-nav li {
+  margin: 0 15px 0 15px;
+}
+
+nav#myNav .navbar-toggle {
+  border: none;
+}
+nav#myNav .navbar-toggle .icon-bar {
+  background-color: black;
+}
+nav#myNav .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-custom .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+nav#myNav ul.navbar-nav > li > a {
+  color: black;
+  font-size: 17px;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: transparent;
+}
+
+nav#myNav .navbar-nav > li > a:hover {
+  color: #ff8259;
+}
+
+.navbar-toggle {
+  overflow: hidden;
+}
+.navbar-toggle .icon-bar {
+  transition: opacity, transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.7, 0, 0, 0.7);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: 0;
+    background-color: #3bedb4;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #3bedb4;
+  }
+}
+/* Top and bottom borders on hovering over navbar links */
+div.topBotomBordersIn a:before, div.topBotomBordersIn a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: black;
+  content: "";
+  opacity: 0;
+  transition: all 0.4s;
+}
+div.topBotomBordersIn a:before {
+  top: 0px;
+  transform: translateY(-10px);
+}
+div.topBotomBordersIn a:after {
+  bottom: 0px;
+  transform: translateY(10px);
+}
+div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
