@@ -63,6 +63,7 @@ justify-content: center;
 
  .portfolio-box ul {
   list-style-type:none;
+  padding-inline-start: 0;
   -webkit-padding-start: 0;
   }
 
