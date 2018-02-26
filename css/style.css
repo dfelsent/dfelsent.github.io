@@ -34,8 +34,6 @@ main {
   max-height: 300px;
   min-height: 200px;
   min-width: 200px;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
   margin: 0 auto;
 }
 
@@ -45,9 +43,32 @@ main {
   position: relative;
   font-size: 1.4em;
 }
-.portfolio-box p {
-  padding: 10px 50px 0 50px;
+
+.portfolio-box div.skillset-group{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
+
+.portfolio-box div.skillset {
+  margin: 20px;
+  padding:1em;
+  width: 15em;
+  box-shadow: black 0px 0px 5px;
+}
+
+.portfolio-box div.skillset p {
+  font-weight: bold;
+}
+
+ .portfolio-box ul {
+  list-style-type:none;
+  -webkit-padding-start: 0;
+  }
+
+  .portfolio-box ul li {
+  margin-bottom:15px;
+  }
 
 .codepen-content-container {
   display: flex;
